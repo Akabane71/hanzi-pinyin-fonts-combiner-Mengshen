@@ -315,9 +315,9 @@ class Font():
         # 作成日(基準日：1904/01/01 00:00 GMT)
         from datetime import datetime
         base_date = datetime.strptime("1904/01/01 00:00", "%Y/%m/%d %H:%M")
-        base_time = base_date.timestamp()
-        now_time  = datetime.now().timestamp() 
-        self.marged_font["head"]["created"] = round( now_time - base_time )
+        now_date = datetime.now()
+        time_diff = now_date - base_date
+        self.marged_font["head"]["created"] = round(time_diff.total_seconds())
         # フォント名等を設定
         if self.FONT_TYPE == config.HAN_SERIF_TYPE:
             self.marged_font["name"] = name_table.HAN_SERIF

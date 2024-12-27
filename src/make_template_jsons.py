@@ -22,6 +22,7 @@ import argparse
 import subprocess
 import shell
 import path as p
+import getSystem as gs
 
 TAMPLATE_TEMP_JSON = "template_temp.json"
 TAMPLATE_MAIN_JSON = "template_main.json"
@@ -36,14 +37,17 @@ def convert_otf2json(source_font_name):
 def make_new_glyf_table_json():
     template_temp_json_path = os.path.join(p.DIR_TEMP, TAMPLATE_TEMP_JSON)
     template_glyf_json_path = os.path.join(p.DIR_TEMP, TAMPLATE_GLYF_JSON)
-    cmd = "cat {} | jq '.glyf' > {}".format(template_temp_json_path, template_glyf_json_path)
+    cmd = 'type {} | jq ".glyf" > {}'.format(template_temp_json_path, template_glyf_json_path)
     shell.process(cmd)
 
 # TAMPLATE_MAIN_JSON の glyf のグリフ情報（contours）を削除する。これをビルドすると空のフォントができる。
 def delete_glyf_table_on_main_json():
     template_temp_json_path = os.path.join(p.DIR_TEMP, TAMPLATE_TEMP_JSON)
     template_main_json_path = os.path.join(p.DIR_TEMP, TAMPLATE_MAIN_JSON)
-    cmd = "cat {} | jq '.glyf |= map_values( (select(1).contours |= []) // .)' > {}".format(template_temp_json_path, template_main_json_path)
+    if gs.SYSTEM_NAME == gs.W:
+        cmd = 'type {} | jq ".glyf |= map_values( (select(1).contours |= []) // .)" > {}'.format(template_temp_json_path, template_main_json_path)
+    else:
+        cmd = 'cat {} | jq ".glyf |= map_values( (select(1).contours |= []) // .)" > {}'.format(template_temp_json_path, template_main_json_path)
     shell.process(cmd)
 
 def make_template(source_font_name):
