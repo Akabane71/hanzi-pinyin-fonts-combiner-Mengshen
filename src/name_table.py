@@ -42,7 +42,7 @@ HAN_SERIF = [
     "languageID": 0,
     "nameID": 0,
     # 著作権注釈
-    "nameString": "Copyright � 2017 Adobe Systems Incorporated (http://www.adobe.com/), with Reserved Font Name 'Source'.\n[萌神PROJECT] Copyright(c) 2020 mengshen project"
+    "nameString": "Copyright � 2017 Adobe Systems Incorporated (http://www.adobe.com/), with Reserved Font Name 'Source'.\n[萌神PROJECT] Copyright(c) 2020 mengshen project. \nFSWSH HanYin Project Copyright 2024 友安好软件（上海）有限公司."
   },
   {
     "platformID": 1,
@@ -130,7 +130,7 @@ HAN_SERIF = [
     "languageID": 0,
     "nameID": 11,
     # ベンダーの URL
-    "nameString": "http://www.mengshen-project.com/"
+    "nameString": "http://www.mengshen-project.com/ \nhttps://www.friendly-sw.cn/"
   },
   {
     "platformID": 1,
@@ -154,7 +154,7 @@ HAN_SERIF = [
     "languageID": 1033,
     "nameID": 0,
     # 著作権注釈
-    "nameString": "Copyright © 2017 Adobe Systems Incorporated (http://www.adobe.com/), with Reserved Font Name 'Source'.\n[萌神PROJECT] Copyright(c) 2020 mengshen project"
+    "nameString": "Copyright © 2017 Adobe Systems Incorporated (http://www.adobe.com/), with Reserved Font Name 'Source'.\n[萌神PROJECT] Copyright(c) 2020 mengshen project. \nFSWSH HanYin Project Copyright 2024 友安好软件（上海）有限公司."
   },
   {
     "platformID": 3,
@@ -234,7 +234,7 @@ HAN_SERIF = [
     "languageID": 1033,
     "nameID": 11,
     # ベンダーの URL
-    "nameString": "http://www.mengshen-project.com/"
+    "nameString": "http://www.mengshen-project.com/ \nhttps://www.friendly-sw.cn/"
   },
   {
     "platformID": 3,
@@ -276,7 +276,7 @@ HANDWRITTEN = [
       "languageID": 0,
       "nameID": 0,
       # 著作権注釈
-      "nameString": "[萌神PROJECT] Copyright(c) 2020 mengshen project with Copyright � 2020 LXGW"
+      "nameString": "[萌神PROJECT] Copyright(c) 2020 mengshen project with Copyright � 2020 LXGW. \nFSWSH HanYin Project Copyright 2024 友安好软件（上海）有限公司."
     },
     {
       "platformID": 1,
@@ -348,7 +348,7 @@ HANDWRITTEN = [
       "languageID": 0,
       "nameID": 11,
       # ベンダーの URL
-      "nameString": "http://www.mengshen-project.com/"
+      "nameString": "http://www.mengshen-project.com/ \nhttps://www.friendly-sw.cn/"
     },
   # Microsoft
     {
@@ -357,7 +357,7 @@ HANDWRITTEN = [
       "languageID": 1033,
       "nameID": 0,
       # 著作権注釈
-      "nameString": "[萌神PROJECT] Copyright © 2020 mengshen project with Copyright © 2020 LXGW"
+      "nameString": "[萌神PROJECT] Copyright © 2020 mengshen project with Copyright © 2020 LXGW. \nFSWSH HanYin Project Copyright 2024 友安好软件（上海）有限公司."
     },
     {
       "platformID": 3,
@@ -429,7 +429,7 @@ HANDWRITTEN = [
       "languageID": 1033,
       "nameID": 11,
       # ベンダーの URL
-      "nameString": "http://www.mengshen-project.com/"
+      "nameString": "http://www.mengshen-project.com/ \nhttps://www.friendly-sw.cn/"
     },
     {
       "platformID": 3,
