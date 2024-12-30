@@ -34,4 +34,5 @@ Simply use it.
 Using this tools we can  ez create some beautiful fonts
 such as :
 * [汉音 project](https://www.friendly-sw.cn/)
+![hanyin-project-moblie](./imgs/pinyin-project-mobile.jpg)
 ![hanyin-project](./imgs/hanyin-project.png)
